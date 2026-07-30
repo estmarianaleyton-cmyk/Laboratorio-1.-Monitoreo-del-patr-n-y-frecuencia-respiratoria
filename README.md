@@ -1,4 +1,4 @@
-# Laboratorio 1-Monitoreo del patrón y frecuencia respiratoria
+# Laboratorio 1
 
 **Universidad Militar Nueva Granada**
 
