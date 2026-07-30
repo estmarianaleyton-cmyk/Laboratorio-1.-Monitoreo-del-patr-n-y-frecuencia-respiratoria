@@ -4,7 +4,7 @@
 
 **Asignatura:** Instrumentación biomedica y biosensores
 
-**Estudiantes:** Dubrasca Martínez, Mariana Leyton, Maria Fernanda Castellanos
+**Estudiantes:** Dubrasca Martínez, Mariana Leyton, Joshara Valentina Palacios
 
 **Fecha:** 28 de julio del 2026
 
