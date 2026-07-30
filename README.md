@@ -2,7 +2,7 @@
 
 **Universidad Militar Nueva Granada**
 
-**Asignatura:** Procesamiento Digital de Señales
+**Asignatura:** Instrumentación biomedica y biosensores
 
 **Estudiantes:** Dubrasca Martínez, Mariana Leyton, Maria Fernanda Castellanos
 
