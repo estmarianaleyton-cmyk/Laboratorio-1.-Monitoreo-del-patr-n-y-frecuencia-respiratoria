@@ -17,3 +17,11 @@
 
 
 # **Metodologia**
+
+# **Resultados**
+
+# **Discusion**
+
+# **Conclusiones**
+
+# **Referencias**
