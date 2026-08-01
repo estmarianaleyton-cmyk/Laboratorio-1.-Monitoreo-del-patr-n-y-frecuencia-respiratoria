@@ -51,7 +51,15 @@ Finalmente, las señales adquiridas fueron procesadas en MATLAB. Inicialmente, s
 La Figura 2 presenta la señal respiratoria adquirida del sujeto en condición de reposo. En la gráfica se observa la señal original registrada por el sensor FSR402 de color gris y la señal obtenida después del procesamiento digital de color rojo, el cual incluyó la eliminación de la componente continua y la aplicación de un filtro Butterworth pasa-banda entre 0.08 Hz y 1 Hz.
 Se evidencia que el filtrado permitió reducir las variaciones de alta frecuencia y las oscilaciones no asociadas al proceso respiratorio, obteniéndose una señal más suave y periódica. Asimismo, se observa que los ciclos respiratorios presentan una amplitud relativamente constante durante la mayor parte del registro, lo que indica un patrón respiratorio estable mientras el sujeto permaneció en reposo.
 
-<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Captura%20de%20pantalla%202026-08-01%20094820.png"/>
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+
+**Fig 2. Señal respiracion original y filtrada en estado en reposo.**
+
+La Figura 3 muestra la detección automática de los picos correspondientes a cada ciclo respiratorio sobre la señal filtrada. El algoritmo identificó seis respiraciones durante los 30 segundos de adquisición, lo que corresponde a una frecuencia respiratoria de 12 respiraciones por minuto.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+
+
 
 # **Discusion**
 
