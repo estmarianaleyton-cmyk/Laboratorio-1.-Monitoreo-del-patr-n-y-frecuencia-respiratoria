@@ -42,17 +42,6 @@ Una vez validado el montaje experimental, se realizaron dos adquisiciones de la 
 
 Finalmente, las señales adquiridas fueron procesadas en MATLAB. Inicialmente, se eliminó la componente de corriente continua (DC) y posteriormente se aplicó un filtro digital Butterworth pasa-banda con frecuencias de corte de 0.08 Hz y 1 Hz, con el fin de conservar únicamente la información correspondiente a la respiración y reducir el ruido presente en la señal. Posteriormente, se identificaron los ciclos respiratorios mediante un algoritmo de detección de picos y se estimó la frecuencia respiratoria a partir del número de respiraciones registradas. De manera complementaria, se realizó el análisis en el dominio de la frecuencia mediante la Transformada Rápida de Fourier (FFT) para determinar la frecuencia dominante de la señal.
 
-## **Código en MATLAB implementado**
-<pre> ```
-
-
-
-
-  
-  ´´´
-</pre>
-
-
 # **Resultados**
 
 # **Discusion**
