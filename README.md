@@ -28,19 +28,29 @@ En este contexto, la presente práctica tiene como objetivo el desarrollo de un 
 - Identificar tareas de verbalización a partir del patrón y/o la frecuencia respiratoria.
   
 # **MetodologÍa**
-En primer lugar se seleccionó un sensor de fuerza FSR402 para detectar los cambios producidos por la expansión y contracción del tórax durante la respiración. Para ello el sensor se ubicó sobre la parte frontal del pecho y se sujetó utilizando una banda. Antes de iniciar la adquisición de datos se verificó que el sensor permaneciera fijo durante todo el procedimiento y que respondiera a los movimientos respiratorios.
+En primer lugar, se seleccionó un sensor de fuerza FSR402 con el propósito de detectar las variaciones de presión ocasionadas por la expansión y contracción del tórax durante el proceso respiratorio. Para ello, el sensor se ubicó sobre la región anterior del tórax y se fijó mediante una banda, asegurando un contacto constante con la superficie corporal. Antes de iniciar la adquisición de datos, se verificó que el sensor permaneciera firmemente sujeto durante todo el procedimiento y que respondiera adecuadamente a los movimientos respiratorios.
 
-Luego el sensor se conectó a un circuito de acondicionamiento de señal conformado por un amplificador operacional LM741 y una resistencia de 10 kΩ, los cuales permitierón convertir las variaciones de resistencia del sensor FSR402 en una señal de voltaje proporcional a los movimientos respiratorios. La salida del circuito se conectó a una tarjeta de adquisición de datos (DAQ), encargada de digitalizar la señal y enviarla al computador para su procesamiento en MATLAB.
+Posteriormente, el sensor se integró a un circuito de acondicionamiento de señal conformado por un divisor de voltaje y seguidor de voltaje. El divisor de voltaje esta conformado por una resistencia de 10 kΩ, con el fin de convertir las variaciones de resistencia del sensor en una señal de voltaje proporcional a los movimientos respiratorios. Esta señal fue acondicionada mediante un amplificador operacional LM741 configurado como seguidor de voltaje, cuya función consistió en adaptar la impedancia de salida del sensor para facilitar su adquisición por la tarjeta sin modificar la amplitud de la señal.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Captura%20de%20pantalla%202026-08-01%20094820.png"/>
+
+Una vez realizadas las conexiones físicas del sistema, se configuró la tarjeta de adquisición en MATLAB, estableciendo una frecuencia de muestreo de 100 Hz y un tiempo de adquisición de 30 segundos. Asimismo, se desarrolló un programa que permitió configurar la adquisición de datos, visualizar la señal respiratoria durante el registro, almacenar las muestras obtenidas y realizar su posterior procesamiento.
+
+Previo a las mediciones definitivas, se efectuaron diversas pruebas con el fin de verificar el correcto funcionamiento del sistema de adquisición. En esta etapa, se comprobó que la tarjeta DAQ reconociera adecuadamente el canal analógico de entrada y que MATLAB recibiera la información de forma continua, sin pérdidas ni interrupciones. Adicionalmente, se realizaron ajustes en la posición del sensor y en la tensión de la banda elástica, debido a que durante las primeras pruebas la señal presentaba una baja variación cuando el sensor no ejercía suficiente contacto con el tórax. Estos ajustes permitieron mejorar la estabilidad de la señal y obtener una representación más clara de los ciclos respiratorios.
+
+Una vez validado el montaje experimental, se realizaron dos adquisiciones de la señal respiratoria. En la primera, el sujeto permaneció en estado de reposo, respirando de manera natural durante un período de 30 segundos. En la segunda adquisición, el mismo sujeto realizó la lectura continua de un texto durante el mismo intervalo de tiempo, con el propósito de evaluar las modificaciones del patrón respiratorio ocasionadas por la verbalización.
+
+Finalmente, las señales adquiridas fueron procesadas en MATLAB. Inicialmente, se eliminó la componente de corriente continua (DC) y posteriormente se aplicó un filtro digital Butterworth pasa-banda con frecuencias de corte de 0.08 Hz y 1 Hz, con el fin de conservar únicamente la información correspondiente a la respiración y reducir el ruido presente en la señal. Posteriormente, se identificaron los ciclos respiratorios mediante un algoritmo de detección de picos y se estimó la frecuencia respiratoria a partir del número de respiraciones registradas. De manera complementaria, se realizó el análisis en el dominio de la frecuencia mediante la Transformada Rápida de Fourier (FFT) para determinar la frecuencia dominante de la señal.
+
+## **Código en MATLAB implementado**
+<pre> ```
 
 
 
 
-
-Una vez realizada la conexión física del sistema se configuró la DAQ en MATLAB para recibir la señal proveniente del sensor. Se desarrolló un programa que permitió visualizar la señal respiratoria en tiempo real y almacenarla durante un período de 30 segundos para su posterior análisis.
-Antes de realizar las mediciones definitivas se llevaron a cabo varias pruebas para verificar el funcionamiento del sistema. Se comprobó que la DAQ reconociera correctamente el canal de adquisición y que MATLAB recibiera los datos sin interrupciones. Después se ajustó la posición del sensor y la tensión de la banda ya que durante las primeras pruebas la señal presentaba poca variación cuando el sensor quedaba demasiado suelto. Estos ajustes permitieron obtener una señal con mayor estabilidad y una mejor representación de los ciclos respiratorios.
-Una vez verificado el montaje se realizaron dos adquisiciones. En la primera nuestra compañera permaneció en reposo respirando de manera natural durante 30 segundos. En la segunda nuestra compañera realizó una lectura en voz alta durante el mismo tiempo, con el propósito de evaluar los cambios que producía la verbalización sobre el patrón respiratorio.
-Finalizadas las adquisiciones, se procesaron para identificar los ciclos de inhalación y exhalación y obtener la frecuencia respiratoria correspondiente a cada esenario. Finalmente se compararon los resultados obtenidos durante el reposo y durante la verbalización con el fin de analizar las diferencias en el comportamiento de la respiración.
-
+  
+  ´´´
+</pre>
 
 
 # **Resultados**
