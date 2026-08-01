@@ -34,6 +34,8 @@ Posteriormente, el sensor se integró a un circuito de acondicionamiento de señ
 
 <img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Captura%20de%20pantalla%202026-08-01%20094820.png"/>
 
+**Fig 1. Montaje del sensor de fuerza resistivo en configuración divisor de voltaje y seguidor de voltaje.**
+
 Una vez realizadas las conexiones físicas del sistema, se configuró la tarjeta de adquisición en MATLAB, estableciendo una frecuencia de muestreo de 100 Hz y un tiempo de adquisición de 30 segundos. Asimismo, se desarrolló un programa que permitió configurar la adquisición de datos, visualizar la señal respiratoria durante el registro, almacenar las muestras obtenidas y realizar su posterior procesamiento.
 
 Previo a las mediciones definitivas, se efectuaron diversas pruebas con el fin de verificar el correcto funcionamiento del sistema de adquisición. En esta etapa, se comprobó que la tarjeta DAQ reconociera adecuadamente el canal analógico de entrada y que MATLAB recibiera la información de forma continua, sin pérdidas ni interrupciones. Adicionalmente, se realizaron ajustes en la posición del sensor y en la tensión de la banda elástica, debido a que durante las primeras pruebas la señal presentaba una baja variación cuando el sensor no ejercía suficiente contacto con el tórax. Estos ajustes permitieron mejorar la estabilidad de la señal y obtener una representación más clara de los ciclos respiratorios.
@@ -43,6 +45,13 @@ Una vez validado el montaje experimental, se realizaron dos adquisiciones de la 
 Finalmente, las señales adquiridas fueron procesadas en MATLAB. Inicialmente, se eliminó la componente de corriente continua (DC) y posteriormente se aplicó un filtro digital Butterworth pasa-banda con frecuencias de corte de 0.08 Hz y 1 Hz, con el fin de conservar únicamente la información correspondiente a la respiración y reducir el ruido presente en la señal. Posteriormente, se identificaron los ciclos respiratorios mediante un algoritmo de detección de picos y se estimó la frecuencia respiratoria a partir del número de respiraciones registradas. De manera complementaria, se realizó el análisis en el dominio de la frecuencia mediante la Transformada Rápida de Fourier (FFT) para determinar la frecuencia dominante de la señal.
 
 # **Resultados**
+
+## ***Estado en resposo***
+
+La Figura 2 presenta la señal respiratoria adquirida del sujeto en condición de reposo. En la gráfica se observa la señal original registrada por el sensor FSR402 de color gris y la señal obtenida después del procesamiento digital de color rojo, el cual incluyó la eliminación de la componente continua y la aplicación de un filtro Butterworth pasa-banda entre 0.08 Hz y 1 Hz.
+Se evidencia que el filtrado permitió reducir las variaciones de alta frecuencia y las oscilaciones no asociadas al proceso respiratorio, obteniéndose una señal más suave y periódica. Asimismo, se observa que los ciclos respiratorios presentan una amplitud relativamente constante durante la mayor parte del registro, lo que indica un patrón respiratorio estable mientras el sujeto permaneció en reposo.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Captura%20de%20pantalla%202026-08-01%20094820.png"/>
 
 # **Discusion**
 
