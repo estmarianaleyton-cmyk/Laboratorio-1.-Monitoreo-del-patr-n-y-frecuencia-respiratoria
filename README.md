@@ -69,6 +69,12 @@ La Figura 4 presenta el espectro de magnitud obtenido mediante la Transformada R
 
 ## ***Durante la verbalización***
 
+La Figura 5 presenta la señal respiratoria registrada mientras el sujeto realizaba la lectura de un texto. En comparación con la condición de reposo, la señal mostró una mayor variabilidad en la amplitud y en la duración de los ciclos respiratorios. Estas modificaciones se atribuyen a los cambios en el patrón respiratorio generados por la verbalización, ya que durante el habla la respiración debe sincronizarse con la producción de las frases y las pausas necesarias para la inspiración.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+
+**Fig 5. Señal respiracion original y filtrada durante la verbalización.**
+
 
 
 
