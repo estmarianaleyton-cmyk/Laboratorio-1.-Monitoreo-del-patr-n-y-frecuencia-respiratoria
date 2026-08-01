@@ -83,9 +83,21 @@ Posteriormente, se aplicó el algoritmo de detección de picos sobre la señal f
 
 Finalmente en la Figura 7 se realizo el análisis espectral mediante la Transformada Rápida de Fourier (FFT), el cual permitió identificar una frecuencia dominante de 0.233 Hz, equivalente a 14 respiraciones por minuto. La diferencia de 2 respiraciones por minuto respecto al método basado en el conteo de picos puede atribuirse a la naturaleza menos periódica de la señal durante la verbalización, lo que produce una distribución de la energía en varias componentes espectrales y reduce la precisión de la estimación basada exclusivamente en la FFT.
 
-<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura7.png"/>
 
 **Fig 7. Espectro de frecuencia (FFT).**
+
+## ***Comparación entre ambas condiciones***
+
+
+| Parámetro | Reposo | Verbalización |
+| --- | --- | --- |
+| Respiraciones detectadas | 6 | 6 |
+| Frecuencia dominante (Hz) | 0.200 | 0.233 |
+| Frecuencia respiratoria (FFT) (resp/min) | 12 | 14 |
+| Frecuencia respiratoria (conteo) (resp/min) | 12 | 12 |
+| Diferencia entre metodos (resp/min) | 0 | 2 |
+
 
 
 
