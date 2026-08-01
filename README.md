@@ -77,7 +77,7 @@ La Figura 5 presenta la señal respiratoria registrada mientras el sujeto realiz
 
 Posteriormente, se aplicó el algoritmo de detección de picos sobre la señal filtrada, identificándose seis respiraciones durante el intervalo de adquisición de 30 segundos, correspondientes a una frecuencia respiratoria de 12 respiraciones por minuto como se muestra en la Figura 6.
 
-<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura6.png"/>
 
 **Fig 6. Detección de picos.**
 
