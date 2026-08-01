@@ -71,9 +71,21 @@ La Figura 4 presenta el espectro de magnitud obtenido mediante la Transformada R
 
 La Figura 5 presenta la señal respiratoria registrada mientras el sujeto realizaba la lectura de un texto. En comparación con la condición de reposo, la señal mostró una mayor variabilidad en la amplitud y en la duración de los ciclos respiratorios. Estas modificaciones se atribuyen a los cambios en el patrón respiratorio generados por la verbalización, ya que durante el habla la respiración debe sincronizarse con la producción de las frases y las pausas necesarias para la inspiración.
 
-<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura5.png"/>
 
 **Fig 5. Señal respiracion original y filtrada durante la verbalización.**
+
+Posteriormente, se aplicó el algoritmo de detección de picos sobre la señal filtrada, identificándose seis respiraciones durante el intervalo de adquisición de 30 segundos, correspondientes a una frecuencia respiratoria de 12 respiraciones por minuto como se muestra en la Figura 6.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+
+**Fig 6. Detección de picos.**
+
+Finalmente en la Figura 7 se realizo el análisis espectral mediante la Transformada Rápida de Fourier (FFT), el cual permitió identificar una frecuencia dominante de 0.233 Hz, equivalente a 14 respiraciones por minuto. La diferencia de 2 respiraciones por minuto respecto al método basado en el conteo de picos puede atribuirse a la naturaleza menos periódica de la señal durante la verbalización, lo que produce una distribución de la energía en varias componentes espectrales y reduce la precisión de la estimación basada exclusivamente en la FFT.
+
+<img width="869" height="488" alt="image" src="https://github.com/estmarianaleyton-cmyk/Laboratorio-1.-Monitoreo-del-patr-n-y-frecuencia-respiratoria/blob/main/Figura2.png"/>
+
+**Fig 7. Espectro de frecuencia (FFT).**
 
 
 
