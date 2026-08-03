@@ -103,7 +103,7 @@ Finalmente en la Figura 7 se realizo el análisis espectral mediante la Transfor
 
 # **Discusion**
 
-##***¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?***
+## ***¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?***
 
 Los resultados hallados muestran diferencias entre las respiración en una condición de reposo y en la verbalización, aunque la frecuencia presento muy poca variación, en reposo la señal presentó ciclos mas uniformes con una amplitud y periodicidad relativamente estable, lo cual es lo esperado en una respiración tranquila. Por otro lado en la lectura se observo una mayor variabilidad tanto en amplitud como en la duración de los ciclos, indicando que dejó de ser completamente regular, puesto que durante el habla la respiración requiere una coordinación entre los músculos respiratorios y el sistema fonador, produciendo inspiraciones rápidas y espiraciones prolongadas para mantener la emisión continua de la voz, esta es la técnica más recomendada para regular los cambios en tono e intensidad del sonido [6].
 
@@ -111,10 +111,17 @@ Aunque el algoritmo de detección de picos estimó una frecuencia respiratoria d
 
 Básicamente la respiración durante la verbalización debe coordinarse con la producción del habla, por tanto, las inspiraciones suelen ser más rápidas y ocurren durante las pausas entre frases, mientras que las espiraciones se prolongan para permitir la emisión continua de la voz. Como consecuencia, el patrón respiratorio se vuelve más irregular y aparecen variaciones en la amplitud y en la duración de cada ciclo, aun cuando la frecuencia respiratoria promedio permanezca cercana a la observada en reposo.
 
-##***¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?***
+##***¿Cuáles serían las ventajas y desventajas de emplear múltiples sensores para el monitoreo del proceso respiratorio? ¿Cuáles podrían ser las razones?***
+
+El uso de múltiples sensores para el monitoreo respiratorio podría ofrecer varias ventajas. En primer lugar, permitiría registrar simultáneamente los movimientos de diferentes regiones del cuerpo, como el tórax y el abdomen, proporcionando una representación más completa del proceso respiratorio. Además, si uno de los sensores pierde contacto o presenta ruido debido al movimiento del paciente, los demás podrían compensar esta pérdida de información, aumentando la confiabilidad de las mediciones. También facilitaría la detección de diferencias entre la respiración torácica y abdominal, lo que podría ser útil para identificar alteraciones en el patrón respiratorio.
+
+Sin embargo, el empleo de varios sensores también presenta desventajas. Incrementa la complejidad del sistema, ya que requiere más etapas de acondicionamiento de señal, mayor cantidad de canales de adquisición y algoritmos capaces de sincronizar e integrar la información proveniente de todos los sensores. Asimismo, aumenta el costo del sistema y puede generar mayor incomodidad para el usuario, debido a la necesidad de colocar varios dispositivos sobre el cuerpo. Adicionalmente, si los sensores no están correctamente calibrados o sincronizados, podrían producir mediciones inconsistentes o redundantes.
+
+En el contexto de esta práctica, el uso de un único sensor FSR402 fue suficiente para identificar el patrón respiratorio y estimar la frecuencia respiratoria en ambas condiciones. No obstante, la mayor variabilidad observada durante la verbalización sugiere que un sistema con múltiples sensores podría mejorar la calidad del registro al captar de forma más completa los cambios en la mecánica respiratoria asociados al habla, especialmente en situaciones donde el movimiento del tórax no refleja por sí solo todo el proceso respiratorio.
 
 # **Conclusiones**
 de las actividades de verbalización introducen variaciones temporales que modifican las características espectrales de la respiración
+
 # **Referencias**
 - [1] K. A. Powers and A. S. Dhamoon, “Physiology, pulmonary, ventilation and perfusion,” StatPearls Publishing, 2023. Accessed: July 31, 2026. [Online]. Available: https://www.ncbi.nlm.nih.gov/books/NBK539907/
 - [2] A. Sapra, A. Malik, and P. Bhandari, “Vital Sign Assessment,” StatPearls, Treasure Island (FL), May 2023. Accessed: July 31, 2026. [Online]. Available: https://www.ncbi.nlm.nih.gov/books/NBK553213/
