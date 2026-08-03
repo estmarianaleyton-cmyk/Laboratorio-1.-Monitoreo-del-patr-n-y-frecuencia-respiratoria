@@ -101,14 +101,25 @@ Finalmente en la Figura 7 se realizo el análisis espectral mediante la Transfor
 
 
 
-
 # **Discusion**
 
-# **Conclusiones**
+##***¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?***
 
+Los resultados hallados muestran diferencias entre las respiración en una condición de reposo y en la verbalización, aunque la frecuencia presento muy poca variación, en reposo la señal presentó ciclos mas uniformes con una amplitud y periodicidad relativamente estable, lo cual es lo esperado en una respiración tranquila. Por otro lado en la lectura se observo una mayor variabilidad tanto en amplitud como en la duración de los ciclos, indicando que dejó de ser completamente regular, puesto que durante el habla la respiración requiere una coordinación entre los músculos respiratorios y el sistema fonador, produciendo inspiraciones rápidas y espiraciones prolongadas para mantener la emisión continua de la voz, esta es la técnica más recomendada para regular los cambios en tono e intensidad del sonido [6].
+
+Aunque el algoritmo de detección de picos estimó una frecuencia respiratoria de 12 respiraciones por minuto en ambas condiciones, el análisis espectral mediante FFT mostró una frecuencia dominante de 14 respiraciones por minuto durante la verbalización, mientras que en reposo fue de 12 respiraciones por minuto. Esta diferencia sugiere que, aunque el número total de respiraciones registradas en los 30 segundos fue similar, la distribución temporal de los ciclos respiratorios cambió durante el habla, haciendo que la señal fuera menos periódica.
+
+Básicamente la respiración durante la verbalización debe coordinarse con la producción del habla, por tanto, las inspiraciones suelen ser más rápidas y ocurren durante las pausas entre frases, mientras que las espiraciones se prolongan para permitir la emisión continua de la voz. Como consecuencia, el patrón respiratorio se vuelve más irregular y aparecen variaciones en la amplitud y en la duración de cada ciclo, aun cuando la frecuencia respiratoria promedio permanezca cercana a la observada en reposo.
+
+##***¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?***
+
+# **Conclusiones**
+de las actividades de verbalización introducen variaciones temporales que modifican las características espectrales de la respiración
 # **Referencias**
 - [1] K. A. Powers and A. S. Dhamoon, “Physiology, pulmonary, ventilation and perfusion,” StatPearls Publishing, 2023. Accessed: July 31, 2026. [Online]. Available: https://www.ncbi.nlm.nih.gov/books/NBK539907/
 - [2] A. Sapra, A. Malik, and P. Bhandari, “Vital Sign Assessment,” StatPearls, Treasure Island (FL), May 2023. Accessed: July 31, 2026. [Online]. Available: https://www.ncbi.nlm.nih.gov/books/NBK553213/
 - [3] M. A. Cretikos, R. Bellomo, K. Hillman, J. Chen, S. Finfer, and A. Flabouris, “Respiratory rate: the neglected vital sign,” Medical Journal of Australia, vol. 188, no. 11, pp. 657–659, June 2018, doi: 10.5694/j.1326-5377.2008.tb01825.x.
 - [4] “FSR 402 Data Sheet Figure 1 -Force Curve Industry Segments Interlink Electronics -Sensor Technologies FSR 400 Series Round Force Sensing Resistor,” Accessed: July 31, 2026. [Online]. Available: https://cdn.sparkfun.com/assets/8/a/1/2/0/2010-10-26-DataSheet-FSR402-Layout2.pdf
 - [5] A. Akbar Khatami, H. Mukhtar, and Dien Rahmawati, “Performance Comparison of Strain Sensors for Wearable Device in Respiratory Rate Monitoring,” Lecture notes in electrical engineering, pp. 723–734, Jan. 2021, doi: 10.1007/978-981-33-6926-9_63.
+- [6] M. P. del Olmo, “Anatomía de la voz cantada y hablada,” MASSALUD, June 20, 2022. https://massalud.org/voz/anatomia-de-la-voz-cantada-y-hablada/ (accessed Aug. 03, 2026).
+‌
